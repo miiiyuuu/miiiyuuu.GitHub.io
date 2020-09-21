@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+.swiper-container {
+  width: 846px;
+  height: 323px;
+}
+
+.swiper-slide {
+  width: 33.33%;
+  height: 300px;
+}
+.img1{
+  background-color: pink;
+}
+.img2{
+  background-color: plum;
+}
+.img3{
+  background-color: salmon;
+}
+.img4{
+  background-color: sandybrown;
+}
+.img5{
+  background-color: seagreen;
+}
+.img6{
+  background-color: sienna;
+}
+
+@media (max-width: 760px) {
+  .swiper-button-next {
+    right: 20px;
+    transform: rotate(90deg);
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+    transform: rotate(90deg);
+  }
+}

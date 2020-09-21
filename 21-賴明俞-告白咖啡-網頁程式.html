@@ -11,9 +11,12 @@
     <!-- /* swiper */ -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- style -->
-    <link rel="stylesheet" href="./告白咖啡style.css">
-    <link rel="stylesheet" href="./告白咖啡JS.js">
+    <link rel="stylesheet" href="./告白咖啡-swiperstyle.css">
+    <link rel="stylesheet" href="./告白咖啡.js">
+    <link rel="stylesheet" href="./告白咖啡-header.css">
 
+    <style>
+      </style>
 </head>
 
 <body>
@@ -116,37 +119,49 @@
             <div class="container">
                 <div class="event-topic"></div>
                 <div class="event-img">
-                    <div class="event-text"></div>
-                    <div class="event-line"></div>
-                    <div class="event-btn">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target="#exampleModalCenter">
-                            寄信
-                        </button>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <h5>好想告白</h5>
-                                        <label for="">收件人</label>
-                                        <input type="text">
-                                        <label for="">寄件人</label>
-                                        <input type="email">
-                                        <label for=""></label>
-                                        <textarea name="" id="form-text" cols="30" rows="5"></textarea>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">送出</button>
-                                    </div>
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide img1">1</div>
+                            <div class="swiper-slide img2">2</div>
+                            <div class="swiper-slide img3">3</div>
+                            <div class="swiper-slide img4">4</div>
+                            <div class="swiper-slide img5">5</div>
+                            <div class="swiper-slide img6">6</div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+                </div>
+                <div class="event-text"></div>
+                <div class="event-line"></div>
+                <div class="event-btn">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        寄信
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <h5>好想告白</h5>
+                                    <label for="">收件人</label>
+                                    <input type="text">
+                                    <label for="">寄件人</label>
+                                    <input type="email">
+                                    <label for=""></label>
+                                    <textarea name="" id="form-text" cols="30" rows="5"></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">送出</button>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
 
                 </div>
@@ -210,7 +225,7 @@
 
         <footer></footer>
     </main>
-    
+
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -221,6 +236,34 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            direction: getDirection(),
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                }
+            }
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
+    </script>
 </body>
 
 </html>
