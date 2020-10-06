@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 30vw;
+            height: 25vw;
+            background-color: bisque;
+
+            position: relative;
+            top: 300px;
+            left: 40%;
+        }
+
+        .box::before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 25vw 0 0 30vw;
+            border-color: transparent transparent transparent #5c7999;
+
+            position: absolute;
+            bottom: -2vw;
+            left: -2vw;
+            z-index: -1;
+        }
+
+        .box::after {
+            content: '';
+            width: 30vw;
+            height: 25vw;
+            border-top: 6px solid black;
+            border-right: 6px solid black;
+
+            position: absolute;
+            top: -2vw;
+            right: -2vw;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+/* 菜單 */
+.menu {
+    width: 100%;
+    height: 100vh;
+    background-color: sandybrown;
+}
+.menu-topic {
+    width: 80%;
+    height: 13%;
+    margin: auto;
+}
+
+.menu-topic-text {
+    width: 150px;
+    margin: auto;
+    color: seagreen;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu-topic-text::before {
+    content: '';
+    width: 26vw;
+    height: 1vh;
+    border-top: 3px solid seagreen;
+    position: absolute;
+    top: 49%;
+    left: -29vw;
+}
+
+.menu-topic-text::after {
+    content: '';
+    width: 26vw;
+    height: 1vh;
+    border-top: 3px solid seagreen;
+    position: absolute;
+    top: 49%;
+    right: -29vw;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.menu_btns {
+    display: flex;
+}
+
+.menu_btn {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: seagreen;
+    border: 2px solid seagreen;
+    border-radius: 10px;
+}
+
+.menu_btn.active {
+    background-color: white;
+    color: seagreen;
+    font-weight: bold;
+}
+
+.menu_content {
+    display: none;
+}
+
+.menu_content.active {
+    display: block;
+
+}
+
+.menu-text li {
+    list-style: none;
+}
+
+.menu-img {
+    height: 300px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1 {
+    background-image: url('https://i.pinimg.com/564x/98/26/f3/9826f3e728f10eb147e0a3880580f706.jpg');
+    height: 330px;
+}
+
+.img2 {
+    background-image: url('https://i.pinimg.com/564x/20/34/7a/20347acab473046e2b8fea2979b3c4ff.jpg');
+}
+
+.img3 {
+    background-image: url('https://i.pinimg.com/564x/51/99/b7/5199b7d720c232d857168fa80f10dc61.jpg');
+}
+
+.img4 {
+    background-image: url('https://i.pinimg.com/564x/b3/1f/7f/b31f7f307894abd1fedef104f489acd4.jpg');
+}
+
+.img5 {
+    background-image: url('https://i.pinimg.com/564x/e7/39/44/e73944cd3d44fdf3cdea9d34b4c40003.jpg');
+}

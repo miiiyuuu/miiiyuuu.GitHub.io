@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .menu_btns {
+            display: flex;
+        }
+
+        .menu_btn {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            background-color: seagreen;
+            border: 2px solid seagreen;
+        }
+
+        .menu_btn.active {
+            background-color: white;
+            color: seagreen;
+            font-weight: bold;
+        }
+
+        .menu_content {
+            display: none;
+        }
+
+        .menu_content.active {
+            display: block;
+
+        }
+
+        .menu-text {
+            background-color: seagreen;
+        }
+
+        .menu-img {
+            height: 300px;
+            display: block;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img1 {
+            background-image: url('https://i.pinimg.com/564x/93/27/87/932787caec3db268e1352946f51c248d.jpg');
+        }
+
+        .img2 {
+            background-image: url('https://i.pinimg.com/564x/17/34/c6/1734c648ed21961333236e5a03868127.jpg');
+        }
+
+        .img3 {
+            background-image: url('https://i.pinimg.com/564x/e9/0c/12/e90c12d407991b36a298c754b9bac8af.jpg');
+        }
+
+        .img4 {
+            background-image: url('https://i.pinimg.com/564x/ac/90/9b/ac909bedfa18f9fa9ca8d509fa99635c.jpg');
+        }
+
+        .img5 {
+            background-image: url('https://i.pinimg.com/564x/90/54/17/90541758a1b83e5ec3b67c4b623d606b.jpg');
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col menu_btns d-flex justify-content-center m-5">
+                <div class="menu_btn px-5 m-3 text-center active">咖啡</div>
+                <div class="menu_btn px-5 m-3 text-center">拿鐵</div>
+                <div class="menu_btn px-5 m-3 text-center">茶</div>
+                <div class="menu_btn px-5 m-3 text-center">氣泡</div>
+                <div class="menu_btn px-5 m-3 text-center">甜點</div>
+            </div>
+        </div>
+
+        <div class="menu_contents mt-5">
+            <!-- 咖啡 -->
+            <div class="menu_content active">
+                <div class="row menu-contentbox d-flex justify-content-center">
+                    <div class="col-6 menu-text mr-5">
+                        <div class="menu-topic">#Coffee</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem velit blanditiis nihil veniam soluta voluptatum aliquid modi, ipsa illum numquam explicabo quod porro consectetur sequi labore alias veritatis officia doloremque?
+                    </div>
+                    <div class="col-5 menu-img img1"></div>
+                </div>
+            </div>
+
+            <!-- 拿鐵 -->
+            <div class="menu_content">
+                <div class="row menu-contentbox d-flex justify-content-center">
+                    <div class="col-6 menu-text">
+                        <div class="menu-topic">#Latte</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem velit blanditiis nihil veniam soluta voluptatum aliquid modi, ipsa illum numquam explicabo quod porro consectetur sequi labore alias veritatis officia doloremque?
+                    </div>
+                    <div class="col-5 menu-img img2"></div>
+                </div>
+            </div>
+
+            <!-- 茶 -->
+            <div class="menu_content">
+                <div class="row menu-contentbox d-flex justify-content-center">
+                    <div class="col-6 menu-text">
+                        <div class="menu-topic">#Tea</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem velit blanditiis nihil veniam soluta voluptatum aliquid modi, ipsa illum numquam explicabo quod porro consectetur sequi labore alias veritatis officia doloremque?
+                    </div>
+                    <div class="col-5 menu-img img3"></div>
+                </div>
+            </div>
+
+            <!-- 蘇打 -->
+            <div class="menu_content">
+                <div class="row menu-contentbox d-flex justify-content-center">
+                    <div class="col-6 menu-text">
+                        <div class="menu-topic">#Soda</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem velit blanditiis nihil veniam soluta voluptatum aliquid modi, ipsa illum numquam explicabo quod porro consectetur sequi labore alias veritatis officia doloremque?
+                    </div>
+                    <div class="col-5 menu-img img4"></div>
+                </div>
+            </div>
+
+            <!-- 甜點 -->
+            <div class="menu_content">
+                <div class="row menu-contentbox d-flex justify-content-center">
+                    <div class="col-6 menu-text">
+                        <div class="menu-topic">#Dessert</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem velit blanditiis nihil veniam soluta voluptatum aliquid modi, ipsa illum numquam explicabo quod porro consectetur sequi labore alias veritatis officia doloremque?
+                    </div>
+                    <div class="col-5 menu-img img5"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var menu_btns = document.querySelectorAll('.menu_btn')
+        var menu_contents = document.querySelectorAll('.menu_content')
+        console.log(menu_btns)
+
+        for (var i = 0; i < menu_btns.length; i++) {
+            const menu_btn = menu_btns[i];
+            const menu_content = menu_contents[i];
+
+            menu_btn.onclick = function () {
+                remove_active()
+
+                menu_btn.classList.add('active')
+                menu_content.classList.add('active')
+            }
+        }
+
+        function remove_active() {
+            for (var i = 0; i < menu_btns.length; i++) {
+                const menu_btn = menu_btns[i];
+                const menu_content = menu_contents[i];
+
+                menu_btn.classList.remove('active')
+                menu_content.classList.remove('active')
+            }
+        }
+
+    </script>
+</body>
+
+</html>

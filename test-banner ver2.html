@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Noto+Serif+TC:wght@300;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans:wght@500&family=Nanum+Pen+Script&family=Noto+Serif+TC:wght@600&family=Rochester&family=Saira+Condensed&family=Sunflower:wght@500&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 1500px;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 20vh;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            z-index: 1000;
+        }
+
+        .banner {
+            width: 100%;
+            height: 120vh;
+            background-color: steelblue;
+            background-image: url('https://media.timeout.com/images/105513016/image.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .logo {
+            width: 300px;
+            height: 200px;
+            /* background-image: url('./img/Logo.svg'); */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin-left: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-box {
+            width: 100px;
+            height: 100px;
+            padding: 8px;
+            text-align: center;
+            font-size: 35px;
+            flex-wrap: wrap;
+            background-color: white;
+            border-top: 3px double black;
+            border-bottom: 3px double black;
+            font-family: 'Sunflower', sans-serif;
+        }
+
+        .logo-text {
+            margin-left: 15px;
+            font-size: 20px;
+        }
+
+        .logo-text-chi {
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 600;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .logo-text-eng {
+            font-family: 'Saira Condensed', sans-serif;
+            font-size: 15px;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+        .nav-menu {
+            display: flex;
+            position: absolute;
+            right: 20%;
+            align-items: center;
+        }
+        .btns {
+            display: flex;
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 600;
+            font-size: 18px;
+            letter-spacing: 10px;
+        }
+
+        .btns ul {
+            display: flex;
+        }
+
+        .btns ul li {
+            list-style: none;
+            margin-right: 15px;
+            writing-mode: vertical-lr;
+        }
+
+        .banner-text {
+            position: absolute;
+            top: 45%;
+            right: 25%;
+            letter-spacing: 5px;
+            line-height: 2;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 15px;
+            font-weight: 900;
+        }
+
+        img {
+            opacity: 0.9;
+            background-attachment: fixed;
+        }
+
+        .sns {
+            font-family: 'Saira Condensed', sans-serif;
+            letter-spacing: 0;
+            font-weight: none;
+            margin-left: 30px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <div class="logo-box">고백카페</div>
+            <div class="logo-text">
+                <div class="logo-text-chi">告白咖啡</div>
+                <div class="logo-text-eng">Gobaek Cafe</div>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <div class="btns">
+                <ul>
+                    <li>關於</li>
+                    <li>菜單</li>
+                    <li>活動</li>
+                    <li>公告</li>
+                    <li>聯絡</li>
+                </ul>
+            </div>
+            <div class="sns">share <i class="fab fa-facebook"></i></div>
+        </div>
+    </div>
+    <div class="banner"></div>
+    <div class="banner-text">
+        把咖啡遞給他，對他說「如果好喝，請跟我交往」，<br>
+        我們店的咖啡很好喝，所以他一定會和你交往，<br>
+        如果被拒絕的話，也請約他來店裡喝杯咖啡。
+    </div>
+</body>
+
+</html>

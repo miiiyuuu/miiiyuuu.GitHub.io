@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For triangle</title>
+    <style>
+        /*Down-left pointing*/
+        .triangle-down-left {
+            width: 50%;
+            height: 0;
+            padding-bottom: 50%;
+            overflow: hidden;
+        }
+
+        .triangle-down-left:after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-right: 500px solid transparent;
+            border-bottom: 500px solid #4679BD;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="triangle-down-left"></div>
+
+</body>
+
+</html>

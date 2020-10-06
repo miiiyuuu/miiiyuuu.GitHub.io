@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+
+        .tab {
+            width: 50%;
+            margin: auto;
+        }
+
+        .btns {
+            display: flex;
+        }
+
+        .btn {
+            width: 16.66%;
+            padding: 5px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            background-color: salmon;
+            border: 2px solid salmon;
+        }
+
+        .btn.active {
+            background-color: white;
+            color: salmon;
+            font-weight: bold;
+        }
+
+        img {
+            width: 100%;
+            padding: 25px;
+            display: block;
+            margin: auto;
+        }
+        
+        .content {
+            width: 50%;
+            display: none;
+        }
+        
+
+        .content.active {
+            display: block;
+            color: salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab">
+        <div class="btns">
+            <div class="btn active">分頁一</div>
+            <div class="btn">分頁二</div>
+            <div class="btn">分頁三</div>
+        </div>
+
+        <div class="contents">
+            
+            <div class="content active">
+                <img src="https://s2.story543.com/imgs/201811/07/5/15415832613189.jpg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel blanditiis incidunt at obcaecati facere
+                veritatis impedit assumenda earum autem quia, hic doloribus asperiores ullam modi.
+            </div>
+            
+            <div class="content">
+                <img src="http://s2.itislooker.com/imgs/201811/07/5/15415834027186.jpg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita velit consectetur quaerat
+                distinctio quod voluptatum ducimus officiis unde minima nisi, cum maxime dignissimos numquam pariatur?
+                Quo provident soluta odio.
+            </div>
+
+            
+            <div class="content">
+                <img src="https://s2.itislooker.com/imgs/201811/07/5/15415831975267.jpg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate exercitationem in nostrum molestias mollitia, vitae sequi rerum adipisci eius ex quae fuga autem quod ut?
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var btns = document.querySelectorAll('.btn')
+        var contents = document.querySelectorAll('.content')
+
+        // console.log(btns)
+
+        for (var i = 0; i < btns.length; i++) {
+            const btn = btns[i];
+            const content = contents[i];
+
+            btn.onclick = function() {
+                console.log(btn)
+
+                remove_active()
+
+                btn.classList.add('active');
+                content.classList.add('active');
+
+            }
+        }
+
+        function remove_active() {
+            for (var i = 0; i < btns.length; i++) {
+                const btn = btns[i];
+                const content = contents[i];
+
+                btn.classList.remove('active');
+                content.classList.remove('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

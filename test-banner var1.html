@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        /* Header */
+        .banner {
+            width: 100%;
+            height: 90vh;
+        }
+
+        .banner-bg-deco::before {
+            content: '';
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            z-index: -100;
+        }
+
+        .banner-bg-deco {
+            width: 100%;
+            height: 35vh;
+            background-color: seagreen;
+            position: relative;
+            top: 25%;
+        }
+
+        .banner-bg-img {
+            width: 60%;
+            height: 70%;
+            background-color: sandybrown;
+            position: absolute;
+            left: 30%;
+            top: 5%;
+        }
+
+        .banner-bg-text {
+            width: 50%;
+            height: 15%;
+            background-color: steelblue;
+            position: absolute;
+            top: 50vh;
+        }
+
+        /* 導覽列 */
+        .navbar {
+            width: 100%;
+            height: 10vh;
+            background-color: sandybrown;
+            position: sticky;
+            top: 0;
+            /* 用position sticky 失效 */
+        }
+
+        .logo {
+            width: 180px;
+            background-color: white;
+            background-image: url('./img/Logo.svg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .nav-btns {
+            width: 100%;
+            display: flex;
+        }
+
+        .nav-btn {
+            width: 20%;
+            margin: 0 37px;
+            font-size: 20px;
+            writing-mode: vertical-rl;
+            letter-spacing: 17px;
+            padding-top: 10px;
+            background-color: white;
+        }
+
+        .sns {
+            font-size: 18px;
+            font-style: italic;
+            color: seagreen;
+        }
+
+        .sns .fab {
+            font-size: 30px;
+            margin-left: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner">
+        <div class="banner-bg-deco"></div>
+        <div class="banner-bg-img"></div>
+        <div class="banner-bg-text d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5"></div>
+                    <div class="col-7">把咖啡遞給他，對他說「如果好喝，請跟我交往」，<br>
+                        我們店的咖啡很好喝，所以他一定會和你交往，<br>
+                        如果被拒絕的話，也請約他來店裡喝杯咖啡。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 導覽列 -->
+    <div class="navbar">
+        <div class="container d-flex justify-content-end">
+            <div class="row">
+                <div class="col-2 mr-5 logo"></div>
+                <div class="col-6 nav-btns d-flex justify-content-center d-flex align-items-center mx-5">
+                    <div class="nav-btn">關於</div>
+                    <div class="nav-btn">菜單</div>
+                    <div class="nav-btn">活動</div>
+                    <div class="nav-btn">公告</div>
+                    <div class="nav-btn">聯絡</div>
+                </div>
+                <div class="sns col-1 mx-2 d-flex justify-content-center d-flex align-items-center">
+                    share <i class="fab fa-facebook"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
