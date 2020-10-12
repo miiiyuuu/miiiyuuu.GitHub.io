@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For swiper</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        /* swiper */
+
+        .swiper-container {
+            width: 100%;
+            height: 300px;
+        }
+
+        .swiper-slide {
+            width: 230px;
+            height: 300px;
+        }
+
+        .event-img1 {
+            background-color: seagreen;
+        }
+
+        .event-img2 {
+            background-color: steelblue;
+        }
+
+        .event-img3 {
+            background-color: seagreen;
+        }
+
+
+        @media (max-width: 760px) {
+            .swiper-button-next {
+                position: absolute;
+                bottom: 0px;
+                right: 10px;
+                transform: rotate(90deg);
+            }
+
+            .swiper-button-prev {
+                left: 20px;
+                transform: rotate(90deg);
+            }
+        }
+
+        /* swiper */
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="event-img">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide event-img1"></div>
+                <div class="swiper-slide event-img2"></div>
+                <div class="swiper-slide event-img3"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        // Initialize Swiper 
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            direction: getDirection(),
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                }
+            }
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
+    </script>
+</body>
+
+</html>

@@ -8,8 +8,6 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -18,6 +16,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans:wght@500&family=Nanum+Pen+Script&family=Noto+Serif+TC:wght@300;600&family=Rochester&family=Saira+Condensed&family=Sunflower:wght@500&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Charmonman:wght@700&family=Courgette&family=Meddon&family=Nanum+Pen+Script&family=Sacramento&display=swap"
+        rel="stylesheet">
+
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- style -->
@@ -28,14 +32,15 @@
     <link rel="stylesheet" href="./告白咖啡-event.css">
     <link rel="stylesheet" href="./告白咖啡-notify.css">
     <link rel="stylesheet" href="./告白咖啡-contact.css">
-    <link rel="stylesheet" href="./googlemap.json">
 
 </head>
 
 <body>
-
     <div class="header">
         <div class="navbar">
+            <a class="gototop" href="#top">
+                <i class="fad fa-mug-hot"></i>
+            </a>
             <div class="logo">
                 <div class="logo-box">고백카페</div>
                 <div class="logo-text">
@@ -46,22 +51,27 @@
             <div class="nav-menu">
                 <div class="btns">
                     <ul>
-                        <li>關於</li>
-                        <li>菜單</li>
-                        <li>活動</li>
-                        <li>公告</li>
-                        <li>聯絡</li>
+                        <li><a href="">關於</a></li>
+                        <li><a href="">菜單</a></li>
+                        <li><a href="">活動</a></li>
+                        <li><a href="">公告</a></li>
+                        <li><a href="">聯絡</a></li>
                     </ul>
                 </div>
-                <div class="sns">share <i class="fab fa-facebook"></i></div>
+                <a href="">
+                    <div class="sns">share <i class="fab fa-facebook"></i></div>
+                </a>
+
             </div>
         </div>
-        <div class="banner"></div>
-        <div class="banner-text">
-            把咖啡遞給他，對他說「如果好喝，請跟我交往」，<br>
-            我們店的咖啡很好喝，所以他一定會和你交往，<br>
-            如果被拒絕的話，也請約他來店裡喝杯咖啡。
+        <div class="banner">
+            <div class="banner-text">
+                把咖啡遞給他，對他說「如果好喝，請跟我交往」，<br>
+                我們店的咖啡很好喝，所以他一定會和你交往，<br>
+                如果被拒絕的話，也請約他來店裡喝杯咖啡。
+            </div>
         </div>
+
     </div>
 
 
@@ -69,8 +79,9 @@
         <!-- 關於 -->
         <div class="about">
             <div class="about-topic">
-                關於<br>About
+                <span class="engtitle">About</span><br>關於
             </div>
+
             <div class="about-content">
                 <div class="about-text">
                     一個曾在這個咖啡店裡告白失敗的男人，看著店外那張貼著的租讓紅紙條。
@@ -87,23 +98,23 @@
                     這回憶是：有個人曾經在這裡跟我表白過！「告白咖啡」這個名字似乎還不錯。
                 </div>
             </div>
+            <div class="about-img"></div>
         </div>
 
         <!-- 菜單 -->
-        <div class="menu">
-            <div class="menu-topic text-center py-5">
-                <div class="menu-topic-text">
-                    菜單<br>Menu</div>
+        <div class="menu py-5">
+            <div class="menu-topic-text">
+                <span class="engtitle">Menu</span><br>菜單
             </div>
 
             <div class="container">
                 <div class="row">
                     <div class="col menu_btns d-flex justify-content-center m-5">
-                        <div class="menu_btn py-2 px-5 m-3 text-center active">咖啡</div>
-                        <div class="menu_btn py-2 px-5 m-3 text-center">拿鐵</div>
-                        <div class="menu_btn py-2 px-5 m-3 text-center">氣泡</div>
-                        <div class="menu_btn py-2 px-5 m-3 text-center">茶</div>
-                        <div class="menu_btn py-2 px-5 m-3 text-center">甜點</div>
+                        <div class="menu_btn py-2 px-4 m-3 text-center active">咖啡</div>
+                        <div class="menu_btn py-2 px-4 m-3 text-center">拿鐵</div>
+                        <div class="menu_btn py-2 px-4 m-3 text-center">氣泡</div>
+                        <div class="menu_btn py-2 px-4 m-3 text-center">茶</div>
+                        <div class="menu_btn py-2 px-4 m-3 text-center">甜點</div>
                     </div>
                 </div>
 
@@ -190,7 +201,7 @@
                                     <li>比司吉 Biscuit</li>
                                     <li>蒸布蕾 Steamed Brûlée</li>
                                     <li>伯爵磅蛋糕 Pound Cake</li>
-                                    ☆ 備註：額外驚喜，請參考小黑板。
+                                    <span class="menu-spe">☆ 額外驚喜，請參考店內小黑板。</span> 
                                 </ul>
                             </div>
                             <div class="col menu-img img5"></div>
@@ -202,90 +213,87 @@
         </div>
 
         <!-- 活動 -->
-        <div class="event d-flex justify-content-center d-flex align-items-center">
-            <div class="event-content">
+        <div class="event">
+            <div class="container event-content">
 
-                <div class="event-topic mb-5">
-                    活動<br>Event
-                </div>
-
-                <!-- Swiper -->
-                <div class="event-img">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide event-img1"></div>
-                            <div class="swiper-slide event-img2"></div>
-                            <div class="swiper-slide event-img3"></div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                <div class="row d-flex align-items-center">
+                    <div class="col-7">
+                        <div class="event-img-t"></div>
+                    </div>
+                    <div class="col-4">
+                        <div class="event-topic">
+                            <span class="engtitle">Event</span><br>活動</div>
                     </div>
                 </div>
 
-                <div class="event-text">
-                    <span class="event-text-title">
-                        當空氣瀰漫咖啡香氛時，也是我們想念彼此的時候。</span><br>
-                    告白不只在男女之間，<br>
-                    對家人、長輩、朋友也能勇敢開口說出心裡的話，<br>
-                    期望透過告白咖啡表達你的心意，暖暖地來傳遞溫情。
-                    <div class="event-deco"></div>
-                </div>
+                <div class="row d-flex align-items-center">
+                    <div class="col-5">
+                        <div class="event-text">
+                            當空氣瀰漫咖啡香氛時，也是我們想念彼此的時候。<br>
+                            告白不只在男女之間，<br>
+                            對家人、長輩、朋友也能勇敢開口說出心裡的話，<br>
+                            期望透過告白咖啡表達你的心意，暖暖地來傳遞溫情。
+                        </div>
+                        <div class="event-deco"></div>
 
+                        <div class="event-btn">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalCenter">寄信</button>
 
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
 
-                <div class="event-btn">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal"
-                        data-target="#exampleModalCenter">寄信</button>
+                                    <div class="modal-content">
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <!-- 關閉紐 -->
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <!-- <span aria-hidden="true" class="x"> -->
+                                            <i class="fal fa-times"></i>
+                                            <!-- </span> -->
+                                        </button>
+                                        <!-- &times; = 叉叉的意思 -->
 
-                            <div class="modal-content">
+                                        <!-- 表單內容 -->
+                                        <div class="modal-body pt-5">
+                                            <form action="">
+                                                <h5 class="mx-5 mb-4">好想告白
+                                                    <i class="fad fa-heart-circle"></i>
+                                                </h5>
 
-                                <!-- 關閉紐 -->
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <!-- <span aria-hidden="true" class="x"> -->
-                                    <i class="fal fa-times"></i>
-                                    <!-- </span> -->
-                                </button>
-                                <!-- &times; = 叉叉的意思 -->
+                                                <div class="form-group">
+                                                    <label for="">收件人</label>
+                                                    <input type="text">
+                                                </div>
 
-                                <!-- 表單內容 -->
-                                <div class="modal-body pt-5">
-                                    <form action="">
-                                        <h5 class="mx-5 mb-4">好想告白
-                                            <i class="fad fa-heart-circle"></i></h5>
+                                                <div class="form-group">
+                                                    <label for="">寄件人</label>
+                                                    <input type="email">
+                                                </div>
 
-                                        <div class="form-group">
-                                            <label for="">收件人</label>
-                                            <input type="text">
+                                                <div class="form-group-text">
+                                                    <label for=""></label>
+                                                    <textarea name="" id="form-text" cols="30" rows="5"></textarea>
+                                                </div>
+                                            </form>
                                         </div>
 
-                                        <div class="form-group">
-                                            <label for="">寄件人</label>
-                                            <input type="email">
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">送出</button>
                                         </div>
-
-                                        <div class="form-group">
-                                            <label for=""></label>
-                                            <textarea name="" id="form-text" cols="30" rows="5"></textarea>
-                                        </div>
-                                    </form>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">送出</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
+                    <div class="col-7">
+                        <div class="event-img-b"></div>
+                    </div>
                 </div>
-
             </div>
         </div>
 
@@ -293,28 +301,44 @@
 
         <!-- 公告 -->
         <div class="notify d-flex justify-content-center d-flex align-items-center">
-            <div class="notify-bg">
-                <div class="notify-topic text-center my-3">公告<br>Notify</div>
-                <div class="container px-2">
-                    <div class="row d-flex justify-content-center d-flex align-items-end">
-                        <div class="col-4 notify-text">歡迎寵物及小孩入內，但為尊重下一位客人，寵物及未脫鞋的小孩雙腳請勿接觸坐墊及抱枕。</div>
-                        <div class="col-2 notify-img img-pet"></div>
-                        <div class="col-2 notify-img img-env"></div>
-                        <div class="col-4 notify-text">本店無低消及內用限時規定, 但「並非休息站」，請勿使用廁所拍完照片就走人，還請尊重店家及其他客人！</div>
-                    </div>
-
-                    <div class="row mt-3 d-flex justify-content-center d-flex align-items-center">
-                        <div class="col-4 notify-text">餐點及飲品上桌後，請於拍完食物遺照後盡快享用， 溫度是會影響口感及味道的哦。</div>
-                        <div class="col-2 notify-img img-din"></div>
-                        <div class="col-2 notify-img img-seat"></div>
-                        <div class="col-4 notify-text">店內空間與座位有限，因此 2人以上的團體客請坐於「戶外」座位，恕不接受分開坐於店內，戶外有準備水冷扇及防蚊噴液可供使用唷！
+            <div class="container">
+                <div class="notify-topic text-center my-3">
+                    <span class="engtitle">Notify</span><br>公告
+                </div>
+                <div class="row">
+                    <div class="notify-card col-3 my-4">
+                        <!-- <div class="notify-img img-pet"></div> -->
+                        <img src="./img/webicon-pet.svg" width="200px">
+                        <div class="notify-text">
+                            歡迎寵物及小孩入內，但為尊重下一位客人，寵物及未脫鞋的小孩雙腳請勿接觸坐墊及抱枕。
                         </div>
                     </div>
 
+                    <div class="notify-card col-3 my-4">
+                        <!-- <div class="notify-img img-din"></div> -->
+                        <img src="./img/webicon-din.svg" width="200px">
+                        <div class="notify-text">
+                            餐點及飲品上桌後，請於拍完食物遺照後盡快享用， 溫度是會影響口感及味道的哦。
+                        </div>
+                    </div>
+
+                    <div class="notify-card col-3 my-4">
+                        <!-- <div class="notify-img img-env"></div> -->
+                        <img src="./img/webicon-env.svg" width="200px">
+                        <div class="notify-text">
+                            本店無低消及內用限時規定, 但「並非休息站」，請勿使用廁所拍完照片就走人，還請尊重店家及其他客人！
+                        </div>
+                    </div>
+
+                    <div class="notify-card col-3 my-4">
+                        <!-- <div class="notify-img img-seat"></div> -->
+                        <img src="./img/webicon-seat.svg" width="200px">
+                        <div class="notify-text">
+                            店內空間與座位有限，因此 2人以上的團體客請坐於「戶外」座位，恕不接受分開坐於店內，戶外有準備水冷扇及防蚊噴液可供使用唷！
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
         </div>
 
         <!-- 聯絡 -->
@@ -352,13 +376,12 @@
                     </div>
                 </div>
             </div>
-            <!-- 頁尾 -->
-            <footer class="d-flex justify-content-center d-flex align-items-center py-4">
-                Copyright© Gobaekcafe.All Rights Reserved.
-            </footer>
+
         </div>
-
-
+        <!-- 頁尾 -->
+        <footer class="d-flex justify-content-center d-flex align-items-center py-4">
+            Copyright© Gobaekcafe.All Rights Reserved.
+        </footer>
 
     </main>
 
@@ -374,35 +397,9 @@
         crossorigin="anonymous"></script>
     <!-- aos js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script> AOS.init(); </script>
 
-
     <script>
-        // Initialize Swiper 
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3,
-            spaceBetween: 50,
-            direction: getDirection(),
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            on: {
-                resize: function () {
-                    swiper.changeDirection(getDirection());
-                }
-            }
-        });
-
-        function getDirection() {
-            var windowWidth = window.innerWidth;
-            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-
-            return direction;
-        }
 
         // tab of menu 
         var menu_btns = document.querySelectorAll('.menu_btn')
@@ -428,6 +425,21 @@
 
                 menu_btn.classList.remove('active')
                 menu_content.classList.remove('active')
+            }
+        }
+
+        // 偵測回到最上層
+
+        var scroll_top = 0;
+        var backtotop = document.querySelector('.gototop');
+
+
+        window.onscroll = function () {
+            scroll_top = window.scrollY
+            if (scroll_top >= 600) {
+                backtotop.classList.add('show');
+            } else {
+                backtotop.classList.remove('show');
             }
         }
 

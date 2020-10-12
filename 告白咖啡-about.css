@@ -1,44 +1,40 @@
 /* 關於 */
+
 .about {
     width: 100%;
-    height: 100vh;
-    position: relative;
+    padding: 50px 0;
 }
 
 .about-topic {
     width: 200px;
-    color: seagreen;
+    margin: auto;
+    color: #613e3b;
     text-align: center;
     font-size: 20px;
     font-family: 'Saira Condensed', sans-serif;
-    border-bottom: 2px solid seagreen;
-    position: absolute;
-    top: 7%;
-    left: calc(50% - 100px);
-}
-
-.about-text {
-    margin-bottom: 15px;
+    border-bottom: 2px solid #613e3b;
 }
 
 .about-content {
     width: 40%;
-    padding: 15px;
-    color: seagreen;
-    position: absolute;
-    top: 18%;
-    left: 18%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: #613e3b;
 }
 
-
-.about-content::after {
-    content: '';
+.about-img {
     width: 100%;
-    height: 100%;
-    background-image: url('https://pic.pimg.tw/cindy6732/1573813727-1295145353.jpg');
+    height: 400px;
+    background-image: url('https://media.architecturaldigest.com/photos/5a678e05eee5ae622449412a/master/w_1500,h_1032,c_limit/ConnecticutDomsCoffee.jpg');
+    /* background-image: url('https://pic.pimg.tw/cindy6732/1573813727-1295145353.jpg'); */
     background-size: cover;
     background-position: center;
-    position: absolute;
-    top: 95%;
-    left: 50%;
+    background-attachment: fixed;
+}
+
+.about-text {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
 }
