@@ -14,6 +14,10 @@
 }
 
 @media(max-width: 992px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .banner-text {
         font-size: 11px;
         right: 11%;
@@ -35,18 +39,21 @@
         color: #ca7159;
     }
 
-    .burger-menu:hover~.nav-menu {
-        display: block;
-    }
-
     .nav-menu {
         position: absolute;
-        right: 30px;
+        /* right: 30px; */
+        right: -300px;
         top: 20vh;
         background-color: white;
         margin-right: unset;
-        display: none;
     }
+
+    .active {
+        right: 30px;
+        display: block;
+    }
+
+
 
     .btns {
         margin-right: unset;
