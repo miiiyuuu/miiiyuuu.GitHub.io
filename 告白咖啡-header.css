@@ -17,17 +17,17 @@ body {
 }
 
 .gototop {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     color: #f0ebe2;
     font-size: 40px;
-    line-height: 80px;
+    line-height: 70px;
     text-align: center;
     background-color: #613e3b;
     border-radius: 50%;
     position: fixed;
     right: 40px;
-    bottom: 30px;
+    bottom: 25px;
     z-index: 2000;
     display: none;
 }
@@ -54,7 +54,6 @@ body {
 }
 
 .logo {
-    width: 300px;
     height: 100%;
     margin-left: 10%;
     display: flex;
@@ -74,9 +73,17 @@ body {
     font-family: 'Sunflower', sans-serif;
 }
 
+.logo-box:hover {
+    color: #ca7159;
+}
+
 .logo-text {
     margin-left: 20px;
     color: #613e3b;
+}
+
+.logo-text:hover {
+    color: #ca7159;
 }
 
 .logo-text-chi {
@@ -93,6 +100,7 @@ body {
     text-align: center;
 }
 
+
 .nav-menu {
     display: flex;
     margin-right: 10%;
@@ -108,15 +116,15 @@ body {
     letter-spacing: 15px;
 }
 
-.btns ul {
-    display: flex;
-}
-
 .btns li {
     list-style: none;
     margin-right: 20px;
     writing-mode: vertical-lr;
     padding-top: 35px;
+}
+
+.btns ul {
+    display: flex;
 }
 
 .nav-menu a {
@@ -136,7 +144,7 @@ body {
 .banner-text {
     position: absolute;
     top: 55%;
-    right: 22%;
+    right: 20%;
     letter-spacing: 5px;
     line-height: 2;
     font-family: 'Noto Serif TC', serif;
@@ -149,6 +157,10 @@ img {
     background-attachment: fixed;
 }
 
+.burger-menu {
+    display: none;
+}
+
 
 
 /* 每個區塊的標題字體 */
@@ -157,3 +169,5 @@ img {
     font-size: 50px;
     color: #ca7159;
 }
+
+

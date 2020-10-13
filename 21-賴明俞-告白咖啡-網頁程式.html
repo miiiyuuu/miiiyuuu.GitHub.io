@@ -32,14 +32,16 @@
     <link rel="stylesheet" href="./告白咖啡-event.css">
     <link rel="stylesheet" href="./告白咖啡-notify.css">
     <link rel="stylesheet" href="./告白咖啡-contact.css">
+    <link rel="stylesheet" href="./告白咖啡-rwd.css">
 
 </head>
 
 <body>
     <div class="header">
         <div class="navbar">
+            
             <a class="gototop" href="#top">
-                <i class="fad fa-mug-hot"></i>
+                <i class="fal fa-arrow-to-top"></i>
             </a>
             <div class="logo">
                 <div class="logo-box">고백카페</div>
@@ -48,14 +50,20 @@
                     <div class="logo-text-eng">Gobaek Cafe</div>
                 </div>
             </div>
+
+            <!-- 漢堡條 -->
+            <div class="burger-menu">
+                <i class="fal fa-bars"></i>
+            </div>
+            
             <div class="nav-menu">
                 <div class="btns">
                     <ul>
-                        <li><a href="">關於</a></li>
-                        <li><a href="">菜單</a></li>
-                        <li><a href="">活動</a></li>
-                        <li><a href="">公告</a></li>
-                        <li><a href="">聯絡</a></li>
+                        <a href=""><li>關於</li></a>
+                        <a href=""><li>菜單</li></a>
+                        <a href=""><li>活動</li></a>
+                        <a href=""><li>公告</li></a>
+                        <a href=""><li>聯絡</li></a>
                     </ul>
                 </div>
                 <a href="">
@@ -123,7 +131,7 @@
                     <div class="menu_content active">
                         <div class="row menu-contentbox d-flex justify-content-center">
                             <div class="col-1"></div>
-                            <div class="col-4 menu-text mr-5 p-3">
+                            <div class="col-12 col-md-4 menu-text md-mr-5 m-3">
                                 <div class="menu-topic">#Coffee</div>
                                 <ul>
                                     <li>濃縮咖啡 Espresso</li>
@@ -140,7 +148,7 @@
                                     <li>焦糖瑪其朵 Caramel Macchiato</li>
                                 </ul>
                             </div>
-                            <div class="col menu-img img1"></div>
+                            <div class="col-12 col-md menu-img img1"></div>
                         </div>
                     </div>
 
@@ -148,7 +156,7 @@
                     <div class="menu_content">
                         <div class="row menu-contentbox d-flex justify-content-center d-flex align-items-center">
                             <div class="col-1"></div>
-                            <div class="col-4 menu-text mr-5">
+                            <div class="col-12 col-md-4 menu-text md-mr-5 m-3">
                                 <div class="menu-topic">#Latte</div>
                                 <ul>
                                     <li>鍋煮奶茶 Milk Tea</li>
@@ -157,7 +165,22 @@
                                     <li>抹茶牛奶 Macha</li>
                                 </ul>
                             </div>
-                            <div class="col menu-img img2"></div>
+                            <div class="col-12 col-md menu-img img2"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- 氣泡 -->
+                    <div class="menu_content">
+                        <div class="row menu-contentbox d-flex justify-content-center d-flex align-items-center">
+                            <div class="col-1"></div>
+                            <div class="col-12 col-md-4 menu-text md-mr-5 m-3">
+                                <div class="menu-topic">#Tea</div>
+                                <ul>
+                                    <li>南非蜜樹茶 Honeybush</li>
+                                    <li>日月潭紅茶 Black Tea</li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md menu-img img4"></div>
                         </div>
                     </div>
 
@@ -165,29 +188,14 @@
                     <div class="menu_content">
                         <div class="row menu-contentbox d-flex justify-content-center d-flex align-items-center">
                             <div class="col-1"></div>
-                            <div class="col-4 menu-text mr-5">
+                            <div class="col-12 col-md-4 menu-text md-mr-5 m-3">
                                 <div class="menu-topic">#Soda</div>
                                 <ul>
                                     <li>莓果氣泡飲 Mixed Berries</li>
                                     <li>檸檬氣泡飲 Lemon</li>
                                 </ul>
                             </div>
-                            <div class="col menu-img img3"></div>
-                        </div>
-                    </div>
-
-                    <!-- 蘇打 -->
-                    <div class="menu_content">
-                        <div class="row menu-contentbox d-flex justify-content-center d-flex align-items-center">
-                            <div class="col-1"></div>
-                            <div class="col-4 menu-text mr-5">
-                                <div class="menu-topic">#Tea</div>
-                                <ul>
-                                    <li>南非蜜樹茶 Honeybush</li>
-                                    <li>日月潭紅茶 Black Tea</li>
-                                </ul>
-                            </div>
-                            <div class="col menu-img img4"></div>
+                            <div class="col-12 col-md menu-img img3"></div>
                         </div>
                     </div>
 
@@ -195,7 +203,7 @@
                     <div class="menu_content">
                         <div class="row menu-contentbox d-flex justify-content-center d-flex align-items-center">
                             <div class="col-1"></div>
-                            <div class="col-4 menu-text mr-5">
+                            <div class="col-12 col-md-4 menu-text md-mr-5 m-3">
                                 <div class="menu-topic">#Dessert</div>
                                 <ul>
                                     <li>比司吉 Biscuit</li>
@@ -204,7 +212,7 @@
                                     <span class="menu-spe">☆ 額外驚喜，請參考店內小黑板。</span> 
                                 </ul>
                             </div>
-                            <div class="col menu-img img5"></div>
+                            <div class="col-12 col-md menu-img img5"></div>
                         </div>
                     </div>
 
@@ -217,17 +225,19 @@
             <div class="container event-content">
 
                 <div class="row d-flex align-items-center">
-                    <div class="col-7">
+                    <div class="col-1"></div>
+                    <div class="col-12 col-md-7">
                         <div class="event-img-t"></div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-md-3">
                         <div class="event-topic">
                             <span class="engtitle">Event</span><br>活動</div>
                     </div>
                 </div>
 
-                <div class="row d-flex align-items-center">
-                    <div class="col-5">
+                <div class="row d-flex align-items-center ">
+                    <div class="col-lg-1"></div>
+                    <div class="col-12 col-md-4 col-lg-3 mt-5">
                         <div class="event-text">
                             當空氣瀰漫咖啡香氛時，也是我們想念彼此的時候。<br>
                             告白不只在男女之間，<br>
@@ -290,7 +300,7 @@
                         </div>
                     </div>
 
-                    <div class="col-7">
+                    <div class="col-12 col-md-7">
                         <div class="event-img-b"></div>
                     </div>
                 </div>
@@ -306,34 +316,30 @@
                     <span class="engtitle">Notify</span><br>公告
                 </div>
                 <div class="row">
-                    <div class="notify-card col-3 my-4">
-                        <!-- <div class="notify-img img-pet"></div> -->
-                        <img src="./img/webicon-pet.svg" width="200px">
-                        <div class="notify-text">
+                    <div class="notify-card col-12 col-md-3 my-5">
+                        <img src="./img/webicon-pet.svg" width="100%">
+                        <div class="notify-text m-md-0 mx-5">
                             歡迎寵物及小孩入內，但為尊重下一位客人，寵物及未脫鞋的小孩雙腳請勿接觸坐墊及抱枕。
                         </div>
                     </div>
 
-                    <div class="notify-card col-3 my-4">
-                        <!-- <div class="notify-img img-din"></div> -->
-                        <img src="./img/webicon-din.svg" width="200px">
-                        <div class="notify-text">
+                    <div class="notify-card col-12 col-md-3 my-5">
+                        <img src="./img/webicon-din.svg" width="100%">
+                        <div class="notify-text m-md-0 mx-5">
                             餐點及飲品上桌後，請於拍完食物遺照後盡快享用， 溫度是會影響口感及味道的哦。
                         </div>
                     </div>
 
-                    <div class="notify-card col-3 my-4">
-                        <!-- <div class="notify-img img-env"></div> -->
-                        <img src="./img/webicon-env.svg" width="200px">
-                        <div class="notify-text">
+                    <div class="notify-card col-12 col-md-3 my-5">
+                        <img src="./img/webicon-env.svg" width="100%">
+                        <div class="notify-text m-md-0 mx-5">
                             本店無低消及內用限時規定, 但「並非休息站」，請勿使用廁所拍完照片就走人，還請尊重店家及其他客人！
                         </div>
                     </div>
 
-                    <div class="notify-card col-3 my-4">
-                        <!-- <div class="notify-img img-seat"></div> -->
-                        <img src="./img/webicon-seat.svg" width="200px">
-                        <div class="notify-text">
+                    <div class="notify-card col-12 col-md-3 my-5">
+                        <img src="./img/webicon-seat.svg" width="100%">
+                        <div class="notify-text m-md-0 mx-5">
                             店內空間與座位有限，因此 2人以上的團體客請坐於「戶外」座位，恕不接受分開坐於店內，戶外有準備水冷扇及防蚊噴液可供使用唷！
                         </div>
                     </div>
@@ -355,8 +361,8 @@
                     <div class="infor-img"></div>
                     <div class="row">
                         <!-- AOS -->
-                        <div class="col-6"></div>
-                        <div class="col-6 mt-5">
+                        <div class="col-7 col-md-6"></div>
+                        <div class="col-5 col-md-6 my-5">
                             <div data-aos="fade-up" data-aos-duration="3000">
                                 <div class="add mb-2">
                                     <div class="add-icon"><i class="fas fa-map-marker-alt"></i> 地址</div>
@@ -366,7 +372,7 @@
                                     <div class="tel-icon"><i class="fas fa-phone-alt"></i> 電話</div>
                                     <div class="tel-text">0966 870 497</div>
                                 </div>
-                                <div class="time">
+                                <div class="time mb-2">
                                     營業時間：10:00 - 19:30<br>
                                     公休日：每周三<br>
                                     無訂位，採現場候位
