@@ -1,5 +1,5 @@
 /* 公告 */
-.notify {
+#notify {
     width: 100%;
     position: relative;
     color: #613e3b;
@@ -22,17 +22,3 @@
     background-position: center;
     background-size: contain;
 }
-/* .img-pet {
-    background-image: url('./img/webicon-pet.svg');
-}
-
-.img-din {
-    background-image: url('./img/webicon-din.svg');
-}
-.img-seat {
-    background-image: url('./img/webicon-seat.svg');
-}
-.img-env {
-    background-image: url('./img/webicon-env.svg');
-    
-} */
