@@ -20,7 +20,11 @@
 
     .banner-text {
         font-size: 11px;
+<<<<<<< HEAD
         right: 12%;
+=======
+        right: 11%;
+>>>>>>> 6b5d2c38a12bda8cd0a1125619a2b16300cc5df8
     }
 
     .burger-menu {
@@ -46,7 +50,10 @@
         top: 20vh;
         background-color: white;
         margin-right: unset;
+<<<<<<< HEAD
         z-index: 20000;
+=======
+>>>>>>> 6b5d2c38a12bda8cd0a1125619a2b16300cc5df8
     }
 
     .active {
@@ -100,6 +107,13 @@
 }
 
 @media(max-width: 768px) {
+<<<<<<< HEAD
+=======
+    .navbar {
+        height: 15vh;
+    }
+
+>>>>>>> 6b5d2c38a12bda8cd0a1125619a2b16300cc5df8
     .nav-menu {
         position: absolute;
         top: 100%;
@@ -107,6 +121,7 @@
 
     .banner {
         width: 100%;
+<<<<<<< HEAD
         height: 45vh;
         background-position: -250px -80px;
     }
@@ -114,6 +129,15 @@
     .banner-text {
         top: 35%;
         right: 20px;
+=======
+        height: 40vh;
+        background-position: -250px -120px;
+    }
+
+    .banner-text {
+        top: 25%;
+        right: 0;
+>>>>>>> 6b5d2c38a12bda8cd0a1125619a2b16300cc5df8
         letter-spacing: 4px;
         font-size: 10px;
     }
@@ -134,6 +158,11 @@
     .infor-img {
         width: 40%;
         height: 120%;
+<<<<<<< HEAD
+=======
+        /* background-color: white; */
+        background-image: url('./img/infor.jpg');
+>>>>>>> 6b5d2c38a12bda8cd0a1125619a2b16300cc5df8
         background-size: 100%;
         margin-left: 10%;
         margin-top: 5%;
@@ -146,6 +175,7 @@
 }
 
 @media(max-width: 576px) {
+<<<<<<< HEAD
     .navbar {
         width: 100%;
         height: 15vh;
@@ -234,5 +264,7 @@
     .time {
         font-size: 9px;
     }
+=======
+>>>>>>> 6b5d2c38a12bda8cd0a1125619a2b16300cc5df8
 
 }
